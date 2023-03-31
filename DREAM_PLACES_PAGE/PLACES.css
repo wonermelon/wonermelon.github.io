@@ -448,3 +448,7 @@ img.column {
 	opacity: 0.3;
 	filter: alpha(opacity=30);
 }
+
+.map-center {
+	text-align: center;
+}
