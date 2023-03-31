@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,500;0,700;1,500&display=swap'); 
+
+/**NAVIGATION BAR**/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection{
+  color: #000;
+  background: #fff;
+}
+
+nav{
+  font-family: 'Poppins',sans-serif;
+  position: fixed;
+  background: #1b1b1b;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo {
+  position: relative;
+}
+.logo-icon {
+  position: absolute;
+  top: 5px; /* adjust the value as needed */
+  left: 5px; /* adjust the value as needed */
+  width: 40px; /* adjust the value as needed */
+  height: auto;
+}
+.menu .logo a {
+  margin: 70px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 33px;
+  font-weight: 600;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
+}
+
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title{
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
+.center .btns{
+  margin-top: 20px;
+}
+.center .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.center .btns button:first-child{
+  color: #fff;
+  background: none;
+}
+.btns button:first-child:hover{
+  background: white;
+  color: black;
+}
+.center .btns button:last-child{
+  background: white;
+  color: black;
+}
+
+/** IMAGE MAP**/
+
+img.map-div{
+	border: border: 5px solid black;
+}
+
+/** HEADER **/
+#header{
+	padding-top: 150px;
+	background-color: black;
+}
+
+div.head-title{
+	font-family: Brygada, serif;
+	width: 90ch;
+	text-align: center;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+		typing 2s steps(38, end),
+		/**blink-caret .75s step-end infinite;**/
+		blinking .7s infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width:90ch}
+}
+
+/* The typewriter cursor effect */
+@keyframes blinking {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+h1.title-text{
+	color: #F5F2E8;
+	font-size: 55px;
+}
+/*quote*/
+div.icon-des{
+	font-family: Georgia,Times,Times New Roman,serif; 
+	text-align: justify;
+	line-height: 25px;
+	font-size: 18.5px;
+	background-color: black;
+	padding-top: 60px;
+	padding-left: 290px;
+	padding-right: 290px;
+	padding-bottom: 100px;
+	color: #F5F2E8
+}
+img.icon-places {
+	display: block; 
+	width: 16.5%;
+	height: auto;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+}
+.header {
+	padding-top: 180px;
+	padding-bottom: 120px;
+	font-family: 'Poppins', sans-serif;
+	background-color: black;
+	text-align: center;
+}
+.header1 {
+	color: #F5F2E8;
+	font-weight: bold;
+	font-size: 80px;
+	padding-bottom: 10px;
+}
+
+.header2 {
+	color: #F5F2E8;
+	/**background-color: #194260;**/
+	font-weight: bold;
+	font-size: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	/**margin-right: 600px;**/
+	/**margin-left: 600px;**/
+	border-radius: 15px;
+}
+
+
+.p-header {
+	font-size: 22px;
+	color: #F5F2E8;
+	text-align: justify;
+	padding-top: 30px;
+	padding-right: 200px;
+	padding-left: 200px;
+}
+
+h1.direction {
+	font-family: 'Poppins', sans-serif;
+	background-color: #F5F2E8;;
+	padding-top: 100px;
+	padding-left: 300px;
+	padding-right: 300px;
+	font-size: 45px;
+	color: #FFAC1B;
+	text-align: center;
+	font-weight: bolder;
+}
+	
+h2.direction {
+	font-family: 'Poppins', sans-serif;
+	background-color: #F5F2E8;
+	padding-top: 20px;
+	padding-left: 300px;
+	padding-right: 300px;
+	font-size: 20px;
+	color: #194260;
+	text-align: center;
+}
+	
+/** CONTENT **/
+
+#content {
+	font-family: 'Poppins', sans-serif;
+	background-color: #F5F2E8;
+	padding-top: 100px;
+	padding-left: 300px;
+	padding-right: 300px;
+	padding-bottom: 100px;
+}
+
+.header3 {
+	text-align: left;
+	color: black;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.paragraph {
+	font-size: 18px;
+	text-align: justify;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 90px;
+	padding-left: 90px;
+	margin-bottom: 30px;
+	background-color: white;
+}
+
+/** IMAGES **/
+
+.header-icon {
+	width: 250px;
+	height: auto;
+}
+
+.float-img {
+	width:300px;
+	height:auto;
+	margin-right:15px;
+	float: left;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding-bottom: 50px;
+}
+
+/**GO TO TOP BUTTONS**/
+.space {
+	width: 50px;
+	height: auto;
+	display: inline-block;
+}
+.space-img{
+	width: 120px;
+	height: auto;
+	display: inline-block;
+	padding-top: 180px;
+	padding-bottom: 20px;
+}
+.btn-holder {
+	background-color: #F5F2E8;
+	text-align:center;
+	padding-bottom: 90px;
+}
+.button {
+  width: 160px;
+  background-color: transparent; 
+  border: none;
+  color: #F5F2E8;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.go-top{
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+}
+.go-top:hover {
+  background-color: black;
+  color: #F5F2E8;
+}
+
+/** scroll down **/
+
+.scroll-down {
+	max-height: 800px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background-color:white;
+	padding-bottom: 100px;
+	margin-bottom: 100px;
+}
+
+.to-do {
+	padding-top: 80px;
+	padding-bottom: 40px;
+	padding-right: 90px;
+	padding-left: 90px;
+	text-align: center;
+	/**font-weight: bold;*/
+	font-size: 18px;
+}
+
+/** DROPDOWN MENU**/
+.dropdown-holder {
+	background-color: black;
+	text-align: center;
+	padding-bottom: 50px;
+}
+.dropbtn {
+  width: 200px;
+  background-color: transparent; 
+  border: 2px solid #F5F2E8;
+  color: #F5F2E8;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  text-align: center;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: black;
+  background-color: #F5F2E8;
+}
+
+.go-main {
+	color: #F5F2E8;
+}
+
+.explore {
+	background-color: #F5F2E8;
+}
+#desc {
+	background-color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 500px;
+	margin-right: 500px;
+	margin-top: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 30px;
+	
+}
+
+
+img.column {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.column:hover {
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}

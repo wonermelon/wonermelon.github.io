@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,500;0,700;1,500&display=swap'); 
+
+/**navigation bar**/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection{
+  color: #000;
+  background: #fff;
+}
+
+nav{
+  font-family: 'Poppins',sans-serif;
+  position: fixed;
+  background: #1b1b1b;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo {
+  position: relative;
+}
+.logo-icon {
+  position: absolute;
+  top: 10px; /* adjust the value as needed */
+  left: 5px; /* adjust the value as needed */
+  width: 40px; /* adjust the value as needed */
+  height: auto;
+}
+.menu .logo a {
+  margin: 70px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 33px;
+  font-weight: 600;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
+}
+
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title{
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
+.center .btns{
+  margin-top: 20px;
+}
+.center .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.center .btns button:first-child{
+  color: #fff;
+  background: none;
+}
+.btns button:first-child:hover{
+  background: white;
+  color: black;
+}
+.center .btns button:last-child{
+  background: white;
+  color: black;
+}
+/**HEADER**/
+#header{
+	padding-top: 150px;
+	background-color: black;
+}
+
+div.head-title{
+	font-family: Brygada, serif;
+	width: 60ch;
+	text-align: center;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+		typing 2s steps(38, end),
+		/**blink-caret .75s step-end infinite;**/
+		blinking .7s infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60ch}
+}
+
+/* The typewriter cursor effect */
+@keyframes blinking {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+h1.title-text{
+	color: #F5F2E8;
+	font-size: 55px;
+}
+
+/*quote*/
+div.icon-des{
+	font-family: Georgia,Times,Times New Roman,serif; 
+	text-align: justify;
+	line-height: 25px;
+	font-size: 18.5px;
+	background-color: black;
+	padding-top: 60px;
+	padding-left: 290px;
+	padding-right: 290px;
+	padding-bottom: 100px;
+	color: #F5F2E8
+}
+img.icon-list {
+	display: block; 
+	width: 16.5%;
+	height: auto;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+}
+
+
+/**content**/
+
+
+/*
+
+  NOT SO IMPORTANT STYLE 
+
+*/
+
+form {
+  margin-bottom:  0px; 
+}
+
+h4 {
+  font-size:  40px; 
+  color:  #111; 
+  margin-top:  80px; 
+  margin-bottom:  40px; 
+  font-weight:  400; 
+}
+p {
+  font-weight:  400;
+  line-height:  155%; 
+}
+.info-wrapper > p {
+  font-size:  16px;
+  color:  #000; 
+  max-width:  500px; 
+}
+
+.form-wrapper {
+  max-width:  1024px;
+  width:  100%; 
+  height:  auto; 
+  min-height:  calc(100vh - 144px); 
+  margin-top:  40px; 
+  background:  #fff;
+  margin-left:  auto; 
+  margin-right:  auto;
+  box-sizing:  border-box;
+}
+.info-wrapper {
+  padding:  0px 40px 20px 40px; 
+}
+.question-wrapper {
+  padding:  40px;
+  border-top:  solid 1px #dbdbdb; 
+}
+.question-wrapper > p {
+  font-size:  35px;
+  font-weight: bolder;
+  color:  #000; 
+  line-height:  155%; 
+}
+.question {
+  font-weight:  400; 
+  color:  #000; 
+  opacity:  .9; 
+  font-size:  80px; 
+  margin-top:  0;
+}
+.question-label {
+  font-size:  14px; 
+  font-weight:  400; 
+  color:  #000; 
+  opacity:  .5; 
+  margin-bottom:  50px; 
+}
+
+.form-actions {
+  padding:  40px; 
+  display:  flex; 
+  flex-direction:  row; 
+  align-items:  center; 
+}
+.form-actions button {
+  padding:  20px 40px; 
+  flex:  1; 
+  background-color:  #000000; 
+  color:  #ffffff; 
+  font-family:  "Work Sans", sans-serif; 
+  font-weight:  400; 
+  font-size:  20px; 
+  border-radius:  2px; 
+}
+
+
+
+
+
+
+IMPORTANT STUFF
+
+*/
+
+.checkbox-wrapper {
+  position: relative; 
+}
+input[type="checkbox"],
+input[type="radio"] {
+  /*display:  none;*/
+  position:  absolute; 
+  top:  0px; 
+  left: 0px; 
+  height:  20px; 
+  width:  20px; 
+  -webkit-appearance:  none;
+}
+
+.checkbox-label {
+  display:  flex; 
+  position:  relative;
+  font-size:  20px; 
+  font-weight:  400;
+  align-items:  center; 
+  justify-content:  flex-start; 
+  margin-bottom:  20px; 
+}
+.checkbox-label:before, 
+.checkbox-label:after {
+  pointer-events: none; 
+}
+.checkbox-label:before {
+  display:  flex; 
+  content: ' ';
+  height:  20px; 
+  width:  20px; 
+  border:  solid 3px #000;
+  background:  #fff;
+
+  margin-right:  10px; 
+}
+.checkbox-label:after {
+  position:  absolute; 
+  top:  7px; 
+  left:  7px; 
+  display:  flex; 
+  content: ' '; 
+  height:  12px; 
+  width:  12px;  
+  background: #000;
+  transform: scale(0);
+  transition:  transform .3s ease; 
+}
+.checkbox-label:after {
+  height:  5px; 
+  width:  12px; 
+  left:  5px; 
+  border-bottom:  solid 4px #000; 
+  border-left:  solid 4px #000; 
+  background:  none; 
+  transform: rotate(-45deg) scale(0);
+  transition:  transform .1s ease, opacity .1s ease;
+  transform-origin: center center; 
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + .checkbox-label:after {
+  opacity:  1; 
+  transform: rotate(-45deg) scale(.8);
+}
+
+/** EXPAND KINEME**/
+
+/*
+
+IMAGE!!!!!!!!!!!!!!!!!!!!
+
+*/
+
+
+.content {
+
+}
+.bl-img {
+	width: 500px;
+	height: auto;
+	float: left;
+	padding-top: 20px;
+	padding-right: 50px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+.paragraph {
+	background-color: #ededed;
+	padding-right: 40px;
+	padding-left: 20px;
+	padding-top: 40px;
+	font-size: 16px;
+	padding-bottom: 90px;
+	text-align: justify;
+	
+}
+ .m-d.expand-list{
+        margin: 0;
+        padding: 0;
+    }
+    .m-d.expand-list > li{
+        list-style-type: none;
+        /**padding: 15px 0;**/
+        /**border-bottom: 1px solid #212121;**/
+        position: relative;
+/*         max-width: 80%; */
+    }
+    .m-d label[class^="tab"]:hover{
+        cursor: pointer;
+    }
+
+    .m-d input[class^="tab"]{
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        left: 0;
+        top: 0; 
+    }
+		.m-d input[class^="tab"]:hover{
+			cursor: pointer;
+		}
+    .m-d label[class^="tab"]{
+        font-weight: bold;
+    }
+    .m-d .content{
+        height: auto;
+        max-height: 0;
+        /**max-width: 300px;**/
+/*        background: yellow;*/
+        overflow: hidden;
+        transform: translateY(20px);
+        transition: all 180ms ease-in-out 0ms; 
+    }
+    .m-d li[data-md-content="300"] input[class^="tab"]:checked ~ .content{
+        max-height: 500px;
+        transition: all 150ms ease-in-out 0ms;
+		margin-bottom: 80px;
+	}
+    .m-d input[class^="tab"]:checked ~ .content{
+        margin-bottom: 20px;
+    }
+    
+    .m-d input[class^="tab"]:checked ~ .open-close-icon .fa-minus{
+        transform: rotate(0deg);
+        transition: transform 150ms ease-in-out 0ms;
+    }
+    .m-d .open-close-icon .fa-plus{
+        opacity: 1;
+        transform:rotate(-90deg);
+        transition: opacity 50ms linear 0ms, transform 150ms ease-in-out 0ms;
+    }
+    .m-d input[class^="tab"]:checked ~ .open-close-icon .fa-plus{
+        opacity: 0;
+        transform: rotate(0deg);
+        transition: opacity 50ms linear 0ms, transform 150ms ease-in-out 0ms; 
+    }
+    
+}
+/**GO TO TOP BUTTONS**/
+.space {
+	width: 50px;
+	height: auto;
+	display: inline-block;
+}
+.space-img{
+	width: 120px;
+	height: auto;
+	display: inline-block;
+	padding-top: 180px;
+	padding-bottom: 20px;
+}
+.btn-holder {
+	background-color: white;
+	text-align:center;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+.button {
+  width: 160px;
+  background-color: transparent; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.go-top{
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+}
+.go-top:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+	line-height: 1.4;
+}
